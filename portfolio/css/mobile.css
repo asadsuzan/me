@@ -1,0 +1,83 @@
+
+
+
+
+/* 1100px */
+@media screen and (max-width:1100px){
+    header .nva-bar {
+        padding:  1rem ;
+    }
+}
+@media screen and (max-width:992px) {
+    header .nva-bar {
+        padding:  5rem ;
+    }
+    .nav{
+        flex-direction: column;
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--bg-color);
+        left: 0;
+        top: 0;
+        opacity: .9;
+        clip-path: circle(100px at 100% -20%);
+        transition: 1000ms;
+    }
+    .clip-path{
+        clip-path: circle(1400px at 90% -20%);
+    }
+    .nav .nav-items{
+        padding: 1.4rem 0 ;
+    }
+    .humbuger{  
+        display: block;
+    }
+}
+@media screen and (max-width:800px) {
+    .header-description .greetings{
+        font-size: 2.5rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin: .5rem 0;
+
+     }
+}
+
+/* 768px */
+@media screen and (max-width:768px){
+    .header-description{ 
+      left: 20%;
+    }
+    .header-description .header-txt{
+        width: 75%;
+     }
+}
+
+/* 576 */
+@media screen and (max-width:576px){
+    header{
+        height: 100vh;
+    }
+    .header-description{ 
+        left: 2%;
+      }
+      header .nva-bar{
+          padding: 0 1rem;
+      }
+      .header-description .header-txt{
+        width: 100%;
+        
+     }
+     .header-description .greetings{
+         font-size: 2rem;
+     }
+     .hire-btn{
+         padding: .5rem 1rem;
+     }
+     .contact-btn{
+         padding: .5rem 1rem;
+     }
+}

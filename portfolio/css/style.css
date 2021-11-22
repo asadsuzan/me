@@ -1,0 +1,173 @@
+body {
+    height: 500vh;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* rest defualt style start */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --primary-color: #ff6347;
+    --secondary-color: #fff;
+    --bg-color: #342c49;
+}
+
+/* rest defualt style end */
+
+
+/* header area strt */
+header {
+    background-image: url(../assets/bg-1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 85vh;
+    width: 100%;
+    position: relative;
+}
+
+header::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, rgb(0, 0, 63) -15%, #000000 100%);
+    opacity: .7;
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+header .nva-bar {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: white; */
+    padding: 0 4rem;
+    position: fixed;
+    width: 100vw;
+    height: 5rem;
+    align-items: center;
+    transition: 250ms;
+    z-index: 9;
+}
+
+header .nva-bar .logo {
+    color: var(--primary-color);
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    font-family: cursive;
+}
+
+.nav .nav-links {
+    margin: 0 .3rem;
+    padding: .4rem 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--secondary-color);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: 250ms;
+}
+
+.nav .nav-links:hover {
+    border: 2px solid var(--primary-color);
+}
+
+.nav-links.active {
+    border: 2px solid var(--primary-color);
+}
+
+.nav-toggle {
+    color: white;
+    font-size: 2rem;
+    transition: 1250ms;
+    cursor: pointer;
+
+}
+
+.humbuger {
+    z-index: 2;
+    display: none;
+}
+
+.sticky {
+    background-color: var(--bg-color);
+    transition: 250ms;
+}
+
+.header-description {
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    z-index: 5;
+    color: white;
+}
+
+.header-description .greetings {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 1rem 0;
+
+}
+
+#auto-input {
+    color: var(--primary-color);
+}
+
+.header-description .header-txt {
+    width: 50%;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin: 2rem 0;
+}
+
+.header-buttons {
+    margin: 4rem 0;
+}
+
+.hire-btn {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: .8rem 1.7rem;
+    border-radius: 20px;
+    transition: 250ms;
+    margin-right: 2%;
+}
+
+.hire-btn:hover {
+    color: wheat;
+}
+
+.contact-btn {
+    border: 2px solid var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: .7rem 1rem;
+    border-radius: 20px;
+}
+
+.contact-btn:hover {
+    color: wheat;
+}
+
+/* header area end */
