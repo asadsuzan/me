@@ -1,16 +1,12 @@
-/* body {
-    height: 500vh;
-} */
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /* rest defualt style start */
-* {
+/* * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 
-}
+} */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -52,7 +48,7 @@ header::after {
     z-index: 1;
 }
 
-header .nva-html {
+header .nva-bar {
     display: flex;
     justify-content: space-between;
     /* background-color: white; */
@@ -65,7 +61,7 @@ header .nva-html {
     z-index: 9;
 }
 
-header .nva-html .logo {
+header .nva-bar .logo {
     color: var(--primary-color);
     font-size: 3rem;
     font-weight: 900;
@@ -318,7 +314,8 @@ header .nva-html .logo {
 }
 
 /*************************** about area end ***************************************/
-.skill-area{
+/*************************** skill area strat ***************************************/
+.skill-area {
     background-image: url(../assets/skills-section-bg.jpg);
     background-position: center;
     background-size: cover;
@@ -327,7 +324,8 @@ header .nva-html .logo {
     position: relative;
     background-attachment: fixed;
 }
-.skill-area .inner-area{
+
+.skill-area .inner-area {
     position: absolute;
     left: 0;
     top: 0;
@@ -335,36 +333,52 @@ header .nva-html .logo {
     width: 100%;
     background-color: var(--bg-color);
     opacity: .9;
-    color:white;
+    color: white;
 }
-.skills{
+
+.right-content {
+    width: 50%;
+}
+
+.left-content {
+    width: 50%;
+}
+
+.skills {
     border-radius: 10px;
     height: 8rem;
-    width: 7rem;
+    width: 20%;
+    margin: 2%;
 }
-.skills img{
-  height: 60px;
-  cursor: pointer;
-  transform: scale(.9);
-  transition: 250ms;
+
+.skills p {
+    color: #000000;
+    font-weight: 900;
 }
-.skills img:hover{
- transform: scale(1);
+
+.skills img {
+    height: 60px;
+    cursor: pointer;
+    transform: scale(.9);
+    transition: 250ms;
 }
-.skills p{
-    color: black;
-    font-weight: 600;
+
+.skills img:hover {
+    transform: scale(1);
 }
+
 /* html */
-.skills .html{
+.skills .html {
     border-radius: 10px;
     height: 11px;
     width: 90%;
     margin: 0 auto;
-    background-color:gray;
+    background-color: gray;
     position: relative;
+
 }
-.skills .html::after{
+
+.skills .html::after {
     content: '90%';
     position: absolute;
     left: 0;
@@ -376,18 +390,20 @@ header .nva-html .logo {
     font-weight: 900;
     text-align: right;
     font-size: 9px;
-    
+
 }
+
 /* css */
-.skills .css{
+.skills .css {
     border-radius: 10px;
     height: 11px;
     width: 90%;
     margin: 0 auto;
-    background-color:gray;
+    background-color: gray;
     position: relative;
 }
-.skills .css::after{
+
+.skills .css::after {
     content: '90%';
     position: absolute;
     left: 0;
@@ -399,18 +415,20 @@ header .nva-html .logo {
     font-weight: 900;
     text-align: right;
     font-size: 9px;
-    
+
 }
+
 /* b5 */
-.skills .b5{
+.skills .b5 {
     border-radius: 10px;
     height: 11px;
     width: 90%;
     margin: 0 auto;
-    background-color:gray;
+    background-color: gray;
     position: relative;
 }
-.skills .b5::after{
+
+.skills .b5::after {
     content: '90%';
     position: absolute;
     left: 0;
@@ -422,18 +440,20 @@ header .nva-html .logo {
     font-weight: 900;
     text-align: right;
     font-size: 9px;
-    
+
 }
+
 /* sass */
-.skills .sass{
+.skills .sass {
     border-radius: 10px;
     height: 11px;
     width: 90%;
     margin: 0 auto;
-    background-color:gray;
+    background-color: gray;
     position: relative;
 }
-.skills .sass::after{
+
+.skills .sass::after {
     content: '80%';
     position: absolute;
     left: 0;
@@ -445,18 +465,20 @@ header .nva-html .logo {
     font-weight: 900;
     text-align: right;
     font-size: 9px;
-    
+
 }
+
 /* js */
-.skills .js{
+.skills .js {
     border-radius: 10px;
     height: 11px;
     width: 90%;
     margin: 0 auto;
-    background-color:gray;
+    background-color: gray;
     position: relative;
 }
-.skills .js::after{
+
+.skills .js::after {
     content: '50%';
     position: absolute;
     left: 0;
@@ -468,18 +490,20 @@ header .nva-html .logo {
     font-weight: 900;
     text-align: right;
     font-size: 9px;
-    
+
 }
+
 /* js */
-.skills .jq{
+.skills .jq {
     border-radius: 10px;
     height: 11px;
     width: 90%;
     margin: 0 auto;
-    background-color:gray;
+    background-color: gray;
     position: relative;
 }
-.skills .jq::after{
+
+.skills .jq::after {
     content: '60%';
     position: absolute;
     left: 0;
@@ -491,17 +515,19 @@ header .nva-html .logo {
     font-weight: 900;
     text-align: right;
     font-size: 9px;
-    
+
 }
-.skills .wd{
+
+.skills .wd {
     border-radius: 10px;
     height: 11px;
     width: 90%;
     margin: 0 auto;
-    background-color:gray;
+    background-color: gray;
     position: relative;
 }
-.skills .wd::after{
+
+.skills .wd::after {
     content: '70%';
     position: absolute;
     left: 0;
@@ -513,17 +539,19 @@ header .nva-html .logo {
     font-weight: 900;
     text-align: right;
     font-size: 9px;
-    
+
 }
-.skills .el{
+
+.skills .el {
     border-radius: 10px;
     height: 11px;
     width: 90%;
     margin: 0 auto;
-    background-color:gray;
+    background-color: gray;
     position: relative;
 }
-.skills .el::after{
+
+.skills .el::after {
     content: '90%';
     position: absolute;
     left: 0;
@@ -535,5 +563,7 @@ header .nva-html .logo {
     font-weight: 900;
     text-align: right;
     font-size: 9px;
-    
+
 }
+
+/*************************** skill area end ***************************************/

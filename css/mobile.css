@@ -95,6 +95,25 @@
     }
 
     /* header */
+    /* skill */
+    .right-content {
+        width: 100%;
+        margin: 0 auto !important;
+        text-align: center;
+    }
+
+    .left-content {
+        width: 100%;
+        margin: 0 auto !important;
+        text-align: center;
+    }
+
+    .skill-area {
+        height: 150vh;
+    }
+
+
+    /* skill */
 
 }
 
