@@ -52,7 +52,7 @@ header::after {
     z-index: 1;
 }
 
-header .nva-bar {
+header .nva-html {
     display: flex;
     justify-content: space-between;
     /* background-color: white; */
@@ -65,7 +65,7 @@ header .nva-bar {
     z-index: 9;
 }
 
-header .nva-bar .logo {
+header .nva-html .logo {
     color: var(--primary-color);
     font-size: 3rem;
     font-weight: 900;
@@ -318,3 +318,222 @@ header .nva-bar .logo {
 }
 
 /*************************** about area end ***************************************/
+.skill-area{
+    background-image: url(../assets/skills-section-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-attachment: fixed;
+}
+.skill-area .inner-area{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--bg-color);
+    opacity: .9;
+    color:white;
+}
+.skills{
+    border-radius: 10px;
+    height: 8rem;
+    width: 7rem;
+}
+.skills img{
+  height: 60px;
+  cursor: pointer;
+  transform: scale(.9);
+  transition: 250ms;
+}
+.skills img:hover{
+ transform: scale(1);
+}
+.skills p{
+    color: black;
+    font-weight: 600;
+}
+/* html */
+.skills .html{
+    border-radius: 10px;
+    height: 11px;
+    width: 90%;
+    margin: 0 auto;
+    background-color:gray;
+    position: relative;
+}
+.skills .html::after{
+    content: '90%';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 90%;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    font-weight: 900;
+    text-align: right;
+    font-size: 9px;
+    
+}
+/* css */
+.skills .css{
+    border-radius: 10px;
+    height: 11px;
+    width: 90%;
+    margin: 0 auto;
+    background-color:gray;
+    position: relative;
+}
+.skills .css::after{
+    content: '90%';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 90%;
+    background-color: #3597f6;
+    border-radius: 10px;
+    font-weight: 900;
+    text-align: right;
+    font-size: 9px;
+    
+}
+/* b5 */
+.skills .b5{
+    border-radius: 10px;
+    height: 11px;
+    width: 90%;
+    margin: 0 auto;
+    background-color:gray;
+    position: relative;
+}
+.skills .b5::after{
+    content: '90%';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 90%;
+    background-color: #8913fb;
+    border-radius: 10px;
+    font-weight: 900;
+    text-align: right;
+    font-size: 9px;
+    
+}
+/* sass */
+.skills .sass{
+    border-radius: 10px;
+    height: 11px;
+    width: 90%;
+    margin: 0 auto;
+    background-color:gray;
+    position: relative;
+}
+.skills .sass::after{
+    content: '80%';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 80%;
+    background-color: #cb6195;
+    border-radius: 10px;
+    font-weight: 900;
+    text-align: right;
+    font-size: 9px;
+    
+}
+/* js */
+.skills .js{
+    border-radius: 10px;
+    height: 11px;
+    width: 90%;
+    margin: 0 auto;
+    background-color:gray;
+    position: relative;
+}
+.skills .js::after{
+    content: '50%';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background-color: orchid;
+    border-radius: 10px;
+    font-weight: 900;
+    text-align: right;
+    font-size: 9px;
+    
+}
+/* js */
+.skills .jq{
+    border-radius: 10px;
+    height: 11px;
+    width: 90%;
+    margin: 0 auto;
+    background-color:gray;
+    position: relative;
+}
+.skills .jq::after{
+    content: '60%';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 60%;
+    background-color: #156bad;
+    border-radius: 10px;
+    font-weight: 900;
+    text-align: right;
+    font-size: 9px;
+    
+}
+.skills .wd{
+    border-radius: 10px;
+    height: 11px;
+    width: 90%;
+    margin: 0 auto;
+    background-color:gray;
+    position: relative;
+}
+.skills .wd::after{
+    content: '70%';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 70%;
+    background-color: #156bad;
+    border-radius: 10px;
+    font-weight: 900;
+    text-align: right;
+    font-size: 9px;
+    
+}
+.skills .el{
+    border-radius: 10px;
+    height: 11px;
+    width: 90%;
+    margin: 0 auto;
+    background-color:gray;
+    position: relative;
+}
+.skills .el::after{
+    content: '90%';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 90%;
+    background-color: #d1285f;
+    border-radius: 10px;
+    font-weight: 900;
+    text-align: right;
+    font-size: 9px;
+    
+}
