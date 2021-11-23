@@ -4,7 +4,7 @@ const navBar = document.querySelector('.nva-bar');
 window.addEventListener('scroll', function () {
     navBar.classList.toggle('sticky', window.scrollY > 100)
 });
-//  animate on scroll strt
+//  animate on scroll end
 
 // for toggle nav-bar strat
 const nav = document.querySelector('.nav');

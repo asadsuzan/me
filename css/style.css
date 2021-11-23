@@ -1,6 +1,6 @@
-body {
+/* body {
     height: 500vh;
-}
+} */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 
@@ -24,17 +24,18 @@ a {
     --primary-color: #ff6347;
     --secondary-color: #fff;
     --bg-color: #342c49;
+    --secondary-bg-color: #fbfbfb;
 }
 
 /* rest defualt style end */
 
 
-/* header area strt */
+/*************************** header area start ***************************************/
 header {
     background-image: url(../assets/bg-1.jpg);
     background-position: center;
     background-size: cover;
-    height: 85vh;
+    height: 80vh;
     width: 100%;
     position: relative;
 }
@@ -170,4 +171,150 @@ header .nva-bar .logo {
     color: wheat;
 }
 
-/* header area end */
+/*************************** header area end ***************************************/
+
+/*************************** about area start ***************************************/
+
+.about-area {
+    background-image: url(../assets/about-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    position: relative;
+
+}
+
+.about-area .inner-area {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: var(--secondary-bg-color);
+    left: 0;
+    top: 0;
+    opacity: .9;
+
+}
+
+.area-title {
+    padding: 2rem 0;
+}
+
+.area-title .headeing {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.area-title .headeing .span {
+    color: var(--primary-color);
+}
+
+.area-title .dots {
+    background-color: var(--primary-color);
+    display: block;
+    height: 2px;
+    width: 6rem;
+    margin: auto;
+    transition: 250ms;
+    animation: transition .5s linear .2s 1;
+}
+
+@keyframes transition {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 6rem;
+    }
+}
+
+.area-title .text {
+    width: 50%;
+    margin: auto;
+    padding: .5rem 0;
+}
+
+.img-container {
+    position: relative;
+    height: 500px;
+    width: 70%;
+    background-color: tomato;
+    border-radius: 20px;
+}
+
+.img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    left: 8%;
+    top: 4%;
+
+}
+
+.img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.description .title {
+    font-weight: 900;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    color: #000000;
+    line-height: 2rem;
+    padding-top: 1rem;
+}
+
+.description .pera {
+    padding: .3rem 0;
+
+}
+
+.social-icons {
+    padding: 1rem 0;
+}
+
+.social-icons .area {
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 3px solid var(--primary-color);
+    border-radius: 50%;
+    display: inline-block;
+    padding: .5rem 0;
+    transition: 250ms;
+    cursor: pointer;
+    text-align: center;
+    margin-right: 2%;
+
+}
+
+.social-icons .area:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.redmore-btn {
+    background-color: #000000;
+    color: var(--secondary-color);
+    border-radius: 5px;
+    padding: .3rem 1rem;
+    display: inline-block;
+    transition: 250ms;
+    cursor: not-allowed;
+    margin: 1.5rem 0;
+}
+
+.redmore-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.about-area .area-content {
+    padding: 0 2rem;
+}
+
+/*************************** about area end ***************************************/
