@@ -181,6 +181,16 @@
     .about-area {
         height: 165vh;
     }
+    .img-container{
+        height:300px
+    }
+     /* about */
+    /* skills */
+    .skills p{
+        font-size: .8rem;
+    }
+    
+    /* skills */
 
-    /* about */
+    
 }
