@@ -175,7 +175,7 @@ header .nva-bar .logo {
     background-image: url(../assets/about-bg.jpg);
     background-position: center;
     background-size: cover;
-    height: 90vh;
+    height: 85vh;
     width: 100%;
     position: relative;
 
@@ -234,7 +234,7 @@ header .nva-bar .logo {
 
 .img-container {
     position: relative;
-    height: 500px;
+    height: 420px;
     width: 70%;
     background-color: tomato;
     border-radius: 20px;
@@ -390,6 +390,8 @@ header .nva-bar .logo {
     font-weight: 900;
     text-align: right;
     font-size: 9px;
+    animation: html 3s ease-in-out 3;
+
 
 }
 
@@ -415,6 +417,7 @@ header .nva-bar .logo {
     font-weight: 900;
     text-align: right;
     font-size: 9px;
+    animation: html 3s ease-in-out 3;
 
 }
 
@@ -440,6 +443,7 @@ header .nva-bar .logo {
     font-weight: 900;
     text-align: right;
     font-size: 9px;
+    animation: html 3s ease-in-out 3;
 
 }
 
@@ -465,6 +469,7 @@ header .nva-bar .logo {
     font-weight: 900;
     text-align: right;
     font-size: 9px;
+    animation: sass 3s ease-in-out 3;
 
 }
 
@@ -490,6 +495,7 @@ header .nva-bar .logo {
     font-weight: 900;
     text-align: right;
     font-size: 9px;
+    animation: js 3s ease-in-out 3;
 
 }
 
@@ -515,6 +521,7 @@ header .nva-bar .logo {
     font-weight: 900;
     text-align: right;
     font-size: 9px;
+    animation: jq 3s ease-in-out 3;
 
 }
 
@@ -539,6 +546,8 @@ header .nva-bar .logo {
     font-weight: 900;
     text-align: right;
     font-size: 9px;
+    animation: wd 3s ease-in-out 3;
+
 
 }
 
@@ -563,7 +572,117 @@ header .nva-bar .logo {
     font-weight: 900;
     text-align: right;
     font-size: 9px;
+    animation: el 3s ease-in-out 3;
+}
+
+/* progressbar animation in skill section strat */
+@keyframes html {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes sass {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes js {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes jq {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes wd {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes el {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+/* progressbar animation in skill section end */
+/*************************** skill area end ***************************************/
+
+
+/*************************** service area strat ***************************************/
+
+.services {
+    background-color: var(--secondary-bg-color);
+}
+
+.service-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.services-txt {
+    font-size: .9rem;
+}
+
+.servicse-icon {
+    background-color: var(--primary-color);
+    height: 5rem;
+    width: 5rem;
+    margin: 1rem auto;
+    border-radius: 50%;
+    padding: 1rem;
+    font-size: 2rem;
+    color: var(--secondary-color);
+    transition: 300ms;
 
 }
 
-/*************************** skill area end ***************************************/
+.service-body {
+    transition: 250ms;
+    padding: 1.5rem;
+    cursor: not-allowed;
+    border-radius: 10px;
+}
+
+.service-body:hover .servicse-icon {
+    background-color: var(--secondary-bg-color);
+    color: var(--bg-color);
+}
+
+.service-body:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/*************************** service area end ***************************************/
