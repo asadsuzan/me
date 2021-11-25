@@ -7,9 +7,9 @@
 
     /* header area start */
     /* about area start */
-    .about-area {
+    /* .about-area {
         height: 100vh;
-    }
+    } */
 
     .about-area .area-content {
         padding: 0;
@@ -108,9 +108,9 @@
         text-align: center;
     }
 
-    .skill-area {
+    /* .skill-area {
         height: 150vh;
-    }
+    } */
 
 
     /* skill */
@@ -135,11 +135,17 @@
         width: 75%;
     }
 
-    .about-area {
+    /* .about-area {
         height: 160vh;
-    }
+    } */
 
     /* about */
+    /* portfolio */
+    .controls ul li {
+        font-size: .8rem;
+    }
+
+    /* portfolio */
 }
 
 
@@ -178,19 +184,35 @@
     /* header */
 
     /* about */
-    .about-area {
+    /* .about-area {
         height: 165vh;
+    } */
+    .img-container {
+        height: 300px
     }
-    .img-container{
-        height:300px
-    }
-     /* about */
+
+    /* about */
     /* skills */
-    .skills p{
+    .skills p {
         font-size: .8rem;
     }
-    
-    /* skills */
 
-    
+    /* skills */
+    /* portfolio */
+    .items {
+        width: 100px;
+        height: 100px;
+    }
+
+    .controls ul li {
+        margin: 4px;
+        padding: .4rem .7rem;
+        font-size: .7rem;
+    }
+
+    /* portfolio */
+
+
+
+
 }
