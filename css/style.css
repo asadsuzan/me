@@ -688,6 +688,7 @@ header .nva-bar .logo {
 .portfolio {
     background: linear-gradient(rgba(52, 44, 73, .9), rgba(52, 44, 73, .9)),
         url("../assets/portfolio-bg.jpg");
+        transition: all .5s;
 
 }
 
@@ -722,6 +723,7 @@ header .nva-bar .logo {
     overflow: hidden;
     margin: .5rem;
     border-radius: 10px;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 1);
 
 }
 

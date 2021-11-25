@@ -20,6 +20,11 @@
     }
 
     /* about area end */
+    /* portfolio */
+    .controls ul li:last-child  {
+        margin: 0;    
+     }
+    /* portfolio */
 
 
 }
@@ -78,6 +83,16 @@
     }
 
     /* about */
+    /* portfolio */
+    .controls ul  {
+        padding: 0;
+         
+     }
+    .controls ul li:last-child  {
+        margin: 0;    
+     }
+ 
+    /* portfolio */
 }
 
 
@@ -196,17 +211,26 @@
     .skills p {
         font-size: .8rem;
     }
+    .skills{
+        width: 30%;
+        margin: 5px 5px;
+    }
 
     /* skills */
     /* portfolio */
     .items {
-        width: 100px;
-        height: 100px;
+        width: 100%;
+        margin: 20px auto;
+        box-shadow: 4px 4px 20px rgba(0, 0, 0, 1);
     }
 
     .controls ul li {
         margin: 4px;
         padding: .4rem .7rem;
+        font-size: .7rem;
+    }
+    .controls ul  {
+       padding: 0;
         font-size: .7rem;
     }
 
