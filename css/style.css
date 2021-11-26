@@ -688,7 +688,8 @@ header .nva-bar .logo {
 .portfolio {
     background: linear-gradient(rgba(52, 44, 73, .9), rgba(52, 44, 73, .9)),
         url("../assets/portfolio-bg.jpg");
-        transition: all .5s;
+    transition: all .5s;
+    padding: 4rem 0;
 
 }
 
@@ -724,6 +725,7 @@ header .nva-bar .logo {
     margin: .5rem;
     border-radius: 10px;
     box-shadow: 4px 4px 20px rgba(0, 0, 0, 1);
+   
 
 }
 
@@ -736,6 +738,7 @@ header .nva-bar .logo {
     object-fit: cover;
     transition: all .3s;
     position: relative;
+   
 
 }
 
@@ -784,3 +787,43 @@ header .nva-bar .logo {
     color: white;
     background-color: black;
 }
+
+/************************ portfolio area end ***************************************/
+
+/*----------------------------- testtimonial area strat----------------------- */
+.testimonial{
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)),
+    url("../assets/testimonial-bg.png");
+    background-size: cover;
+    background-position: center;
+   width: 100%;
+   padding: 3rem 0;
+}
+.carousel-item{
+    background-color: #191919;
+    border: 4px solid var(--secondary-bg-color);
+    border-radius: 20px;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 1);
+    padding: 2rem 2rem;
+}
+.carousel-img img {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    padding-bottom: 3px;
+   
+}
+.post, .name{
+    padding: 0;
+    margin: 0;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: bolder;
+
+}
+.comments{
+    padding-top: 15px;
+}
+  
+/*----------------------------- testtimonial area end----------------------- */
+
