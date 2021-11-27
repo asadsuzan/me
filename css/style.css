@@ -173,7 +173,7 @@ header .nva-bar .logo {
 
 .about-area {
     background: linear-gradient(rgba(243, 243, 243, .9), rgba(243, 243, 243, .9)),
-        url("../assets/skills-section-bg.jpg");
+        url("../assets/about-bg.jpg");
     background-position: center;
     background-size: cover;
     /* height: 85vh; */
@@ -725,7 +725,7 @@ header .nva-bar .logo {
     margin: .5rem;
     border-radius: 10px;
     box-shadow: 4px 4px 20px rgba(0, 0, 0, 1);
-   
+
 
 }
 
@@ -738,7 +738,7 @@ header .nva-bar .logo {
     object-fit: cover;
     transition: all .3s;
     position: relative;
-   
+
 
 }
 
@@ -791,29 +791,34 @@ header .nva-bar .logo {
 /************************ portfolio area end ***************************************/
 
 /*----------------------------- testtimonial area strat----------------------- */
-.testimonial{
+.testimonial {
     background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)),
-    url("../assets/testimonial-bg.png");
+        url("../assets/testimonial-bg.png");
     background-size: cover;
     background-position: center;
-   width: 100%;
-   padding: 3rem 0;
+    width: 100%;
+    /* padding: 3rem 0; */
+    padding-bottom: 7rem;
 }
-.carousel-item{
+
+.carousel-item {
     background-color: #191919;
     border: 4px solid var(--secondary-bg-color);
     border-radius: 20px;
     box-shadow: 4px 4px 30px rgba(0, 0, 0, 1);
     padding: 2rem 2rem;
 }
+
 .carousel-img img {
     height: 8rem;
     width: 8rem;
     border-radius: 50%;
     padding-bottom: 3px;
-   
+
 }
-.post, .name{
+
+.post,
+.client {
     padding: 0;
     margin: 0;
     color: var(--primary-color);
@@ -821,9 +826,196 @@ header .nva-bar .logo {
     font-weight: bolder;
 
 }
-.comments{
+
+.comments {
     padding-top: 15px;
 }
-  
-/*----------------------------- testtimonial area end----------------------- */
 
+.carousel-indicators [data-bs-target] {
+    /* background-color: var(--primary-color); */
+    padding: .1rem 0;
+    border-radius: 10px;
+}
+
+/*----------------------------- testtimonial area end----------------------- */
+/*----------------------------- contact area strat----------------------- */
+
+
+#contact {
+    background: linear-gradient(#1b2191bd, #0c104cbd), url("../assets/bg_contact.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-bottom: 4rem;
+}
+
+#contact .form-area {
+    color: #fff;
+    width: 900px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 10px;
+    background: #5d9ad05e;
+}
+
+#contact form br {
+    display: none;
+}
+
+#contact .form-area .form-input {
+    padding: 12px 10px;
+    margin-top: 25px;
+    border: none;
+    /*     border-bottom: 1px solid #fff; */
+    background: #120731ab;
+    color: #fff;
+}
+
+#contact .form-control::placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+#contact .form-area .form-input:focus {
+    /* 	border-color: var(--primary); */
+    box-shadow: none;
+}
+
+#contact .name-area {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact .name-area .first-name,
+#contact .name-area .last-name {
+    width: 49%;
+}
+
+#contact .email-area.subject {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact .email-area.subject span {
+    width: 49%;
+}
+
+#contact .msg-btn-area {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact .msg-btn-area .cst-btn {
+    text-align: center;
+    margin: 50px auto 0;
+    padding: 13px 30px;
+    font-size: 18px;
+}
+
+#contact .cst-btn {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+#contact .cst-btn:hover {
+    background: #191919;
+}
+
+/*----------------------------- contact area end----------------------- */
+/*----------------------------- fotter area start----------------------- */
+#footer {
+	padding: 70px 0 0;
+	background: var(--bg-color);
+	color: #cecece;
+}
+#footer .col-lg-3:nth-child(2),
+#footer .col-lg-3:nth-child(3) {
+	padding-left: 55px;
+}
+#footer ul {
+	padding-left: 20px;
+    list-style: none;
+}
+#footer .footer-logo {
+	width: 145px;
+	display: inline-block;
+}
+#footer .content-describe h5 span {
+	color: var(--primary-color);
+}
+#footer .contact-info {
+	padding: 0;
+	margin: 40px 0;
+}
+#footer .contact-info li {
+	display: flex;
+	align-items: center;
+	margin-bottom: 5px;
+    
+}
+#footer .contact-info li i {
+	font-size: 20px;
+}
+#footer .contact-info li p {
+	margin: 0 0 0 10px;
+	font-size: 18px;
+}
+
+#footer .menu-link, #footer .social-link ul {
+	margin-bottom: 0;
+}
+#footer .menu-link li, #footer .social-link li {
+	margin-bottom: 10px;
+}
+#footer .menu-link li a, #footer .social-link ul li a {
+	text-decoration: none;
+	font-size: 18px;
+	color: #cecece;
+	transition: 0.3s;
+	position: relative;
+}
+#footer .menu-link li a::before, #footer .social-link ul li a::before {
+	position: absolute;
+	content: ">";
+	top: -3px;
+	left: -17px;
+	width: 40px;
+	height: 30px;
+	color: var(--primary-color);
+}
+#footer .menu-link li a:hover, #footer .social-link ul li a:hover {
+	color: var(--primary-color);
+}
+#footer .hire-me-area img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+#footer .hire-me-area .fiverr,
+#footer .hire-me-area .upwork {
+	display: flex;
+	align-items: center;
+}
+#footer .hire-me-area a.cst-btn {
+	margin: 0 0 0 10px;
+	color: #cecece;
+    background-color: #000000;
+}
+#footer .hire-me-area a.cst-btn:hover {
+	background: var(--primary-color);
+}
+#footer .container-fluid {
+	background: #191919;
+}
+#footer .copyright-area {
+	padding: 35px 0 25px;
+	margin-top: 60px;
+}
+#footer .copyright-area p {
+	margin: 0;
+}
+#footer .copyright-area a {
+	color: var(--primary-color);
+}
+/*----------------------------- fotter area end----------------------- */
