@@ -14,8 +14,6 @@ window.addEventListener('scroll', function () {
 });
 //  animate on scroll end
 
-
-
 // for toggle nav-bar strat
 const nav = document.querySelector('.nav');
 const humbuger = document.querySelector('.humbuger');
@@ -43,3 +41,37 @@ let typed = new Typed('#auto-input', {
     loop: true
 });
 // typing animation end
+
+
+// function for close the nav on-click the nav-items strt
+
+var links = document.getElementsByClassName('nav-items');
+links[0].addEventListener('click',function(){
+    nav.classList.toggle('clip-path');
+    toggleIcon.classList.replace('fa-times', 'fa-bars');
+});
+links[1].addEventListener('click',function(){
+    nav.classList.toggle('clip-path');
+    toggleIcon.classList.replace('fa-times', 'fa-bars');
+});
+links[2].addEventListener('click',function(){
+    nav.classList.toggle('clip-path');
+    toggleIcon.classList.replace('fa-times', 'fa-bars');
+});
+links[3].addEventListener('click',function(){
+    nav.classList.toggle('clip-path');
+    toggleIcon.classList.replace('fa-times', 'fa-bars');
+});
+links[4].addEventListener('click',function(){
+    nav.classList.toggle('clip-path');
+    toggleIcon.classList.replace('fa-times', 'fa-bars');
+});
+links[5].addEventListener('click',function(){
+    nav.classList.toggle('clip-path');
+    toggleIcon.classList.replace('fa-times', 'fa-bars');
+});
+links[6].addEventListener('click',function(){
+    nav.classList.toggle('clip-path');
+    toggleIcon.classList.replace('fa-times', 'fa-bars');
+});
+// function for close the nav on-click the nav-items strt
