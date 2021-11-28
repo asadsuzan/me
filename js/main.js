@@ -1,10 +1,20 @@
+// preloder start
+const preloder = document.querySelector(".preloader")
+function myFunction() {
+    preloder.style.display = "none"
+}
+// preloder start
 
 //  animate on scroll strt
+const topp = document.querySelector('.go-top');
 const navBar = document.querySelector('.nva-bar');
 window.addEventListener('scroll', function () {
-    navBar.classList.toggle('sticky', window.scrollY > 100)
+    navBar.classList.toggle('sticky', window.scrollY > 100);
+    topp.classList.toggle('opacity', window.scrollY > 100);
 });
 //  animate on scroll end
+
+
 
 // for toggle nav-bar strat
 const nav = document.querySelector('.nav');

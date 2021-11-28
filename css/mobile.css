@@ -104,19 +104,24 @@
     #footer .col-lg-3:nth-child(1) {
         width: 45%;
     }
+
     #footer .col-lg-3:nth-child(2) {
         width: 25%;
     }
+
     #footer .col-lg-3:nth-child(3) {
         width: 25%;
         padding-left: 50px;
     }
+
     #footer .col-lg-3:nth-child(4) {
         margin-top: 30px;
     }
+
     #footer .footer-logo {
         width: 160px;
     }
+
     /* fotter */
 }
 
@@ -221,19 +226,23 @@
     #footer .col-lg-3:nth-child(1) {
         width: 70%;
     }
+
     #footer .col-lg-3:nth-child(2) {
         width: 30%;
         padding-left: 15px;
     }
+
     #footer .col-lg-3:nth-child(3) {
         width: 30%;
         padding-left: 15px;
         order: 4;
         margin-top: 30px;
     }
+
     #footer .col-lg-3:nth-child(4) {
         width: 70%;
     }
+
     /* fotter */
 }
 
@@ -259,7 +268,8 @@
     }
 
     .header-description .greetings {
-        font-size: 2rem;
+        font-size: 2.5rem;
+        font-weight: 900;
     }
 
     .hire-btn {
@@ -343,18 +353,22 @@
     #footer .col-lg-3:nth-child(1) {
         width: 100%;
     }
+
     #footer .col-lg-3:nth-child(2) {
         width: 50%;
         margin-top: 30px;
     }
+
     #footer .col-lg-3:nth-child(3) {
         width: 50%;
         order: 3;
     }
+
     #footer .col-lg-3:nth-child(4) {
         width: 100%;
         order: 4;
     }
+
     /* fotter */
 
 

@@ -26,30 +26,33 @@
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- owl cdn   end-->
+    <!-- aos css start-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- aos css end-->
     <!-- CUSTOM  CSS  srt -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/mobile.css">
     <!-- CUSTOM  CSS  srt -->
 </head>
 
-<body>
+<body onload="myFunction()">
 
     <!---------------------------------- header area start------------------------- -->
 
-    <header  id="header">
+    <header id="header">
         <nav class="nva-bar">
             <a href="#" class="logo">LOGO</a>
             <div class="humbuger">
                 <i class="fas fa-bars nav-toggle"></i>
             </div>
             <ul class="nav">
-                <li class="nav-items "><a href="#" class="nav-links active">home</a></li>
-                <li class="nav-items"><a href="#" class="nav-links">about</a></li>
-                <li class="nav-items"><a href="#" class="nav-links">skill</a></li>
-                <li class="nav-items"><a href="#" class="nav-links">services</a></li>
-                <li class="nav-items"><a href="#" class="nav-links">portfolio</a></li>
-                <li class="nav-items"><a href="#" class="nav-links">testimonial</a></li>
-                <li class="nav-items"><a href="#" class="nav-links">contact</a></li>
+                <li class="nav-items "><a href="#header" class="nav-links active">home</a></li>
+                <li class="nav-items"><a href="#about" class="nav-links">about</a></li>
+                <li class="nav-items"><a href="#skill" class="nav-links">skill</a></li>
+                <li class="nav-items"><a href="#services" class="nav-links">services</a></li>
+                <li class="nav-items"><a href="#portfolio" class="nav-links">portfolio</a></li>
+                <li class="nav-items"><a href="#testimonial" class="nav-links">testimonial</a></li>
+                <li class="nav-items"><a href="#contact" class="nav-links">contact</a></li>
             </ul>
         </nav>
         <div class="header-description ">
@@ -72,64 +75,71 @@
 
     <!---------------------------------- about area start------------------------- -->
 
-    <section class="about-area">
+    <section class="about-area" id="about" ">
         <div class=" inner-area">
-            <div class="container">
-                <!-- area title start -->
-                <div class="area-title text-center">
-                    <h2 class="headeing">About <span class="span">me</span></h2>
-                    <span class="dots"></span>
-                    <p class="text">I have included some information about myself, which will give you a sense of who I
-                        am and what I do professionally.</p>
-                </div>
-                <!-- area title end -->
-                <!-- area content start -->
-                <div class="row pt-5  gy-5 area-content ">
-                    <!-- left content strat -->
-                    <div class="col-xl-6 col-lg-6 col-sm-12  ">
-                        <div class="img-container ">
-
-                            <div class="img ">
-                                <img src="./assets/PRO.jpg" alt="pro" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- left content end -->
-                    <!-- right content strat -->
-                    <div class="col-xl-6 col-lg-6  col-sm-12right">
-                        <div class="description  ">
-                            <h2 class="title ">
-                                Hello! This is SUZAN. A freelance Web Designe and Front-end Developer
-                            </h2>
-                            <p class="pera">Coding is one of my passions, which is why I write codes for you. I have
-                                been learning web development for the last three years, and I strive to learn something
-                                new every day.
-                            </p>
-                            <p class="pera">
-                                It is my responsibility to build your website to be both functional and user-friendly,
-                                as well as attractive. I concentrate on scalability and clean code that is easy to
-                                maintain.
-                            </p>
-                        </div>
-                        <div class="social-icons">
-                            <i class="fab fa-github area"></i>
-                            <i class="fab fa-linkedin-in area"></i>
-                            <i class="fab fa-facebook-f area"></i>
-                            <i class="fas fa-envelope area"></i>
-                        </div>
-                        <a href="#" class="redmore-btn">Read More</a>
-                    </div>
-                    <!-- right content end -->
-                </div>
-                <!-- area content end -->
+        <div class="container">
+            <!-- area title start -->
+            <div class="area-title text-center">
+                <h2 class="headeing">About <span class="span">me</span></h2>
+                <span class="dots"></span>
+                <p class="text">I have included some information about myself, which will give you a sense of who I
+                    am and what I do professionally.</p>
             </div>
+            <!-- area title end -->
+            <!-- area content start -->
+            <div class="row pt-5  gy-5 area-content ">
+                <!-- left content strat -->
+                <div class="col-xl-6 col-lg-6 col-sm-12  ">
+                    <div class="img-container " data-aos="zoom-in">
+
+                        <div class="img ">
+                            <img src="./assets/PRO.jpg" alt="pro" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <!-- left content end -->
+                <!-- right content strat -->
+                <div class="col-xl-6 col-lg-6  col-sm-12right">
+                    <div class="description  ">
+                        <h2 class="title ">
+                            Hello! This is SUZAN. A freelance Web Designe and Front-end Developer
+                        </h2>
+                        <p class="pera">Coding is one of my passions, which is why I write codes for you. I have
+                            been learning web development for the last three years, and I strive to learn something
+                            new every day.
+                        </p>
+                        <p class="pera">
+                            It is my responsibility to build your website to be both functional and user-friendly,
+                            as well as attractive. I concentrate on scalability and clean code that is easy to
+                            maintain.
+                        </p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://github.com/SuZaN4" target="_blank">
+                            <i class="fab fa-github area"></i>
+                        </a>
+                        <i class="fab fa-linkedin-in area"></i>
+                        <a href="https://www.facebook.com/asad.sujon.16" target="_blank">
+                            <i class="fab fa-facebook-f area"></i>
+                        </a>
+                        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJlHnCCwXxsWTfPdCFzwjFwHxkNGVDqWtrbjGflDdVGkhmBWPsgFJHdrKxtDHdjBNRFSJNq"
+                            target="_blank">
+                            <i class="fas fa-envelope area"></i>
+                        </a>
+                    </div>
+                    <a href="#" class="redmore-btn">Read More</a>
+                </div>
+                <!-- right content end -->
+            </div>
+            <!-- area content end -->
+        </div>
         </div>
     </section>
 
     <!---------------------------------- about area end------------------------- -->
     <!---------------------------------- sklill area start------------------------- -->
 
-    <section class="skill-area">
+    <section class="skill-area" id="skill">
         <div class="inner-area">
             <div class="container">
                 <!-- area title start -->
@@ -141,7 +151,7 @@
                 </div>
                 <!-- area title end -->
                 <div class="area-contents d-flex flex-wrap pt-5">
-                    <div class="left-content mx-auto m-0 ">
+                    <div class="left-content mx-auto m-0 " data-aos="zoom-in">
                         <img src="./assets/skills-features-img.png" alt="features" class="img-fluid">
                     </div>
                     <div class="right-content mx-auto  ">
@@ -201,7 +211,7 @@
     <!---------------------------------- skill area end------------------------- -->
 
     <!---------------------------------- service area strat------------------------- -->
-    <section class="services">
+    <section class="services" id="services">
         <!-- area title start -->
         <div class="area-title text-center">
             <h2 class="headeing">What <span class="span">I DO ?</span></h2>
@@ -281,7 +291,7 @@
     <!---------------------------------- service area end------------------------- -->
 
     <!---------------------------------- portfolio area srt------------------------- -->
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <!-- area title start -->
         <div class="area-title text-center py-5">
             <h2 class="headeing text-white">Recent <span class="span">Works</span></h2>
@@ -300,7 +310,7 @@
             </ul>
             <div class="items-container d-flex flex-wrap justify-content-center">
 
-                <div class="items web html ">
+                <div class="items web html " data-aos="zoom-in">
                     <a href="./assets/cuda.jpg">
                         <img src="./assets/cuda.jpg" alt="web">
                     </a>
@@ -315,7 +325,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="items web html ">
+                <div class="items web html " data-aos="zoom-in">
                     <a href="./assets/cathub.jpg">
                         <img src="./assets/cathub.jpg" alt="web">
                     </a>
@@ -331,7 +341,7 @@
                     </div>
                 </div>
 
-                <div class="items web  wp page">
+                <div class="items web  wp page" data-aos="zoom-in">
                     <a href="./assets/daraz-home-page-cloned.png">
                         <img src="./assets/daraz-home-page-cloned.png" alt="web">
                     </a>
@@ -347,7 +357,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="items web html wp page ">
+                <div class="items web html wp page " data-aos="zoom-in">
                     <a href="./assets/applab.jpg">
                         <img src="./assets/applab.jpg" alt="web">
                     </a>
@@ -362,7 +372,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="items   el wp ">
+                <div class="items   el wp " data-aos="zoom-in">
                     <a href="./assets/agency-website.jpg">
                         <img src="./assets/agency-website.jpg" alt="web">
                     </a>
@@ -377,7 +387,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="items web  el wp ">
+                <div class="items web  el wp " data-aos="zoom-in">
                     <a href="./assets/activebox.jpg">
                         <img src="./assets/activebox.jpg" alt="web">
                     </a>
@@ -392,7 +402,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="items  html wp ">
+                <div class="items  html wp " data-aos="zoom-in">
                     <a href="./assets/doctime.jpg">
                         <img src="./assets/doctime.jpg" alt="web">
                     </a>
@@ -417,7 +427,7 @@
 
     <!------------------------------ testimonila area strat------------------------- -->
 
-    <section class="testimonial text-center mx-auto text-white ">
+    <section class="testimonial text-center mx-auto text-white " id="testimonial">
         <!-- area title start -->
         <div class="area-title text-center py-5">
             <h2 class="headeing ">Clinets Say <span class="span">Abot Me ?</span></h2>
@@ -502,8 +512,7 @@
                         <p role="status" aria-live="polite" aria-atomic="true"></p>
                         <ul></ul>
                     </div>
-                    <form action="/#wpcf7-f7-o1" method="post" class="wpcf7-form init" novalidate="novalidate"
-                        data-status="init">
+                    <form action="" method="" class="wpcf7-form init">
                         <div style="display: none;">
                             <input type="hidden" name="_wpcf7" value="7">
                             <input type="hidden" name="_wpcf7_version" value="5.5.2">
@@ -516,18 +525,17 @@
                             <span class="wpcf7-form-control-wrap first-name"><input type="text" name="first-name"
                                     value="" size="40"
                                     class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control form-input name cst-c7-from"
-                                    aria-required="true" aria-invalid="false" placeholder="First Name*"></span><br>
+                                    placeholder="First Name*"></span><br>
                             <span class="wpcf7-form-control-wrap last-name"><input type="text" name="last-name" value=""
                                     size="40"
                                     class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control form-input name cst-c7-from"
-                                    aria-required="true" aria-invalid="false" placeholder="Last Name*"></span>
+                                    placeholder="Last Name*"></span>
                         </div>
                         <div class="email-area subject">
                             <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email"
                                     value="" size="40"
                                     class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control form-input cst-c7-from"
-                                    id="email" aria-required="true" aria-invalid="false"
-                                    placeholder="Email*"></span><br>
+                                    id="email" placeholder="Email*"></span><br>
                             <span class="wpcf7-form-control-wrap subject"><input type="text" name="subject" value=""
                                     size="40"
                                     class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control form-input cst-c7-from"
@@ -538,13 +546,12 @@
                             <span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40"
                                     rows="10"
                                     class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required form-control form-input cst-c7-from"
-                                    id="message" aria-required="true" aria-invalid="false"
-                                    placeholder="Your Message*"></textarea></span><br>
+                                    id="message" placeholder="Your Message*"></textarea></span><br>
                             <input type="submit" value="Send Message"
                                 class="wpcf7-form-control has-spinner wpcf7-submit btn cst-btn"><span
                                 class="wpcf7-spinner"></span>
                         </div>
-                        <div class="wpcf7-response-output" aria-hidden="true"></div>
+                        <div class="wpcf7-response-output"></div>
                     </form>
                 </div>
             </div>
@@ -552,15 +559,15 @@
     </section>
     <!----------------------------- contact area end------------------------- -->
 
-<!-- Start Footer Section -->
-<footer id="footer">
-    <div class="container">
-         <div class="row">
-             <div class="col-lg-3 col-md-6 col-sm-12">
-                 <div class="footer-logo-area">
-				   
-                    <a href="#" class="logo">LOGO</a>
-					</div>
+    <!-- Start Footer Section -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="footer-logo-area">
+
+                        <a href="#" class="logo">LOGO</a>
+                    </div>
                     <ul class="contact-info">
                         <li>
                             <i class="fas fa-envelope"></i>
@@ -580,13 +587,29 @@
                         <h5>Menu <span>Links</span></h5>
                     </div>
                     <div class="menu-link">
-                        <div class="menu-footer-menu-container"><ul id="footer-nav" class="menu"><li id="menu-item-26" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-26"><a href="https://panthopro.xyz/#about" aria-current="page">About</a></li>
-<li id="menu-item-27" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-27"><a href="https://panthopro.xyz/#skills" aria-current="page">Skills</a></li>
-<li id="menu-item-28" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-28"><a href="https://panthopro.xyz/#services" aria-current="page">Services</a></li>
-<li id="menu-item-29" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-29"><a href="https://panthopro.xyz/#portfolio" aria-current="page">Portfolio</a></li>
-<li id="menu-item-30" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-30"><a href="https://panthopro.xyz/#testimonial" aria-current="page">Testimonial</a></li>
-<li id="menu-item-31" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-31"><a href="https://panthopro.xyz/#contact" aria-current="page">Contact</a></li>
-</ul></div>                    </div>
+                        <div class="menu-footer-menu-container">
+                            <ul id="footer-nav" class="menu">
+                                <li id="menu-item-26" class="">
+                                    <a href="#about">About</a>
+                                </li>
+                                <li id="menu-item-27" class="">
+                                    <a href="#skill">Skills</a>
+                                </li>
+                                <li id="menu-item-28" class="">
+                                    <a href="#services">Services</a>
+                                </li>
+                                <li id="menu-item-29" class="">
+                                    <a href="#Portfolio">Portfolio</a>
+                                </li>
+                                <li id="menu-item-30" class="">
+                                    <a href="#testimonial">Testimonial</a>
+                                </li>
+                                <li id="menu-item-31" class="">
+                                    <a href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="content-describe">
@@ -601,7 +624,7 @@
                                 <a target="_blank" href="#">Github</a>
                             </li>
                             <li>
-                                <a target="_blank" href="#">Facebook</a>
+                                <a target="_blank" href="https://www.facebook.com/asad.sujon.16" class="fb">Facebook</a>
                             </li>
                             <li>
                                 <a href="#">Skype</a>
@@ -617,16 +640,18 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="hire-me-area">
-						<div class="content-describe">
-							<h5>Freelance <span>Marketplace</span></h5>
-							<p>If you are interested in hiring me, please click on the link below</p>
+                        <div class="content-describe">
+                            <h5>Freelance <span>Marketplace</span></h5>
+                            <p>If you are interested in hiring me, please click on the link below</p>
                         </div>
                         <div class="fiverr">
-                            <img src="https://panthopro.xyz/wp-content/themes/pantholio/assets/resources/img/fiverr.jpg" alt="Fiverr">
+                            <img src="https://panthopro.xyz/wp-content/themes/pantholio/assets/resources/img/fiverr.jpg"
+                                alt="Fiverr">
                             <a target="_blank" class="btn cst-btn" href="#">Go Fiverr</a>
                         </div>
                         <div class="upwork mt-4">
-                            <img src="https://panthopro.xyz/wp-content/themes/pantholio/assets/resources/img/upwork.png" alt="Upword">
+                            <img src="https://panthopro.xyz/wp-content/themes/pantholio/assets/resources/img/upwork.png"
+                                alt="Upword">
                             <a class="btn cst-btn" href="#">Go Upwork</a>
                         </div>
                     </div>
@@ -635,15 +660,25 @@
         </div>
         <div class="container-fluid">
             <div class="copyright-area text-center">
-                <p>Copyright &copy; 2021 <span><a href="#" target="_blank">Asad Suzan</a></span>. All Rights Reserved</p>
+                <p>Copyright &copy; 2021 <span><a href="#" target="_blank">Asad Suzan</a></span>. All Rights Reserved
+                </p>
             </div>
         </div>
     </footer>
-<!-- End Footer Section -->
+    <!-- End Footer Section -->
 
-
-
-
+    <!-- back to top srat -->
+    <div class="go-top">
+        <a href="#header">
+            <i class="fas fa-arrow-alt-circle-up"></i>
+        </a>
+    </div>
+    <!-- back to top srat -->
+    <!-- Preloader strat -->
+    <div class="preloader">
+        <div class="preloader-bulet"></div>
+    </div>
+    <!-- Preloader end -->
 
 
 
@@ -672,10 +707,26 @@
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- owl cdn end -->
+    <!-- aos js cdn start -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- aos js cdn end -->
 
     <script>
+        //********** plugins-function***************** 
         $(document).ready(function () {
-
+            // aos-animation strat
+            AOS.init({
+                duration: 1000,
+                offset: 200,
+            }
+            );
+            // aos-animation end
+            // header active functions strat
+            $('.nav-links').click(function () {
+                $('.nav-links').removeClass('active');
+                $(this).addClass('active');
+            })
+            // header active functions end
             // filtering functions srt
             $('.list').click(function () {
                 let value = $(this).attr('data-filter');
