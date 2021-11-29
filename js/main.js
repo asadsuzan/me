@@ -8,9 +8,11 @@ function myFunction() {
 //  animate on scroll strt
 const topp = document.querySelector('.go-top');
 const navBar = document.querySelector('.nva-bar');
+const appcontainer = document.querySelector('.app-container');
 window.addEventListener('scroll', function () {
     navBar.classList.toggle('sticky', window.scrollY > 100);
     topp.classList.toggle('opacity', window.scrollY > 100);
+    appcontainer.classList.toggle('whtas', window.scrollY > 100);
 });
 //  animate on scroll end
 
@@ -35,7 +37,7 @@ humbuger.addEventListener('click', function () {
 
 // typing animation srt
 let typed = new Typed('#auto-input', {
-    strings: ['Mern Stack web Developer'],
+    strings: ['Web Desinger', 'Web Developer'],
     typeSpeed: 100,
     backSpeeed: 200,
     loop: true
@@ -46,32 +48,51 @@ let typed = new Typed('#auto-input', {
 // function for close the nav on-click the nav-items strt
 
 var links = document.getElementsByClassName('nav-items');
-links[0].addEventListener('click',function(){
+links[0].addEventListener('click', function () {
     nav.classList.toggle('clip-path');
     toggleIcon.classList.replace('fa-times', 'fa-bars');
 });
-links[1].addEventListener('click',function(){
+links[1].addEventListener('click', function () {
     nav.classList.toggle('clip-path');
     toggleIcon.classList.replace('fa-times', 'fa-bars');
 });
-links[2].addEventListener('click',function(){
+links[2].addEventListener('click', function () {
     nav.classList.toggle('clip-path');
     toggleIcon.classList.replace('fa-times', 'fa-bars');
 });
-links[3].addEventListener('click',function(){
+links[3].addEventListener('click', function () {
     nav.classList.toggle('clip-path');
     toggleIcon.classList.replace('fa-times', 'fa-bars');
 });
-links[4].addEventListener('click',function(){
+links[4].addEventListener('click', function () {
     nav.classList.toggle('clip-path');
     toggleIcon.classList.replace('fa-times', 'fa-bars');
 });
-links[5].addEventListener('click',function(){
+links[5].addEventListener('click', function () {
     nav.classList.toggle('clip-path');
     toggleIcon.classList.replace('fa-times', 'fa-bars');
 });
-links[6].addEventListener('click',function(){
+links[6].addEventListener('click', function () {
     nav.classList.toggle('clip-path');
     toggleIcon.classList.replace('fa-times', 'fa-bars');
 });
 // function for close the nav on-click the nav-items strt
+
+
+// for whats app start
+
+const app = document.getElementById('app');
+const appBtn = document.getElementById('appbtn');
+appBtn.addEventListener('click', function () {
+    app.classList.toggle('app-toggle');
+
+});
+// for whats app end
+
+
+// // for testing perpuse start
+document.querySelector('.redmore-btn').addEventListener('click', function () {
+    alert('Sorry! We are working on it');
+});
+
+// // for testing perpuse end
