@@ -375,3 +375,10 @@
 
 
 }
+
+@media screen and (max-width:450px) {
+    .app-body {
+        width: 90%;
+    }
+    
+}
