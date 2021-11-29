@@ -93,8 +93,8 @@ appBtn.addEventListener('click', function () {
 // // for testing perpuse start
 document.querySelector('.redmore-btn').addEventListener('click', function () {
     alert('Sorry! We are working on it');
-});
 
+});
 // // for testing perpuse end
 
 // send form data to whats app start
@@ -107,7 +107,6 @@ function gotowhatsapp() {
     var subject = document.getElementById("subject").value;
 
 
-
     var url = "https://wa.me/8801614010594?text="
         + "First-Name: " + fname + "%0a"
         + "Last-Name: " + lname + "%0a"
@@ -118,3 +117,4 @@ function gotowhatsapp() {
     window.open(url, '_blank').focus();
 }
 // send form data to whats app end
+
