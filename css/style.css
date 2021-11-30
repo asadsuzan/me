@@ -61,15 +61,18 @@ header .nva-bar {
     z-index: 9;
 }
 
-.logo {
+/* .logo {
     color: var(--primary-color);
     font-size: 3rem;
     font-weight: 900;
     text-transform: uppercase;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     font-family: cursive;
+} */
+.logo img{
+   
+    width: 10rem;
 }
-
 .nav .nav-links {
     margin: 0 .3rem;
     padding: .4rem 1rem;
@@ -1191,7 +1194,7 @@ header .nva-bar {
     overflow: hidden;
     background-color: whitesmoke;
     transition: all .5s linear;
-    display: none;
+     display: none; 
 
 }
 
@@ -1275,8 +1278,8 @@ header .nva-bar {
 
 .app-btn {
     background-color: limegreen;
-    height: 55px;
-    width: 55px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
     text-align: center;
     display: flex;
@@ -1289,8 +1292,23 @@ header .nva-bar {
 
 .app-btn i {
     color: white;
-    font-size: 2.3rem;
+    font-size: 2rem;
+    animation: whatsapp 1.5s linear  infinite;
+    border-radius: 50%;
+   
 
+}
+@keyframes whatsapp {
+    50%{
+        transform: scale(.9);
+        
+    }
+    100%{
+        transform: scale(1.2);
+        box-shadow: 4px 3px  20px rgba(0, 0, 0, .7);
+      
+        
+    }
 }
 
 /*----------------------------- whats  area end----------------------- */
