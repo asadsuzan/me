@@ -28,25 +28,26 @@ a {
 
 /*************************** header area start ***************************************/
 header {
-    background-image: url(../assets/bg-1.jpg);
+    background: linear-gradient(to right, rgba(0, 0, 63, .4) -15%, #000000 100%), url("../assets/the-midnight-monsters-crt-tv-crt-monitor-bed-hd-wallpaper-preview.jpg");
     background-position: center;
     background-size: cover;
-    height: 80vh;
+    height: 85vh;
     width: 100%;
     position: relative;
+    background-attachment: fixed;
 }
 
-header::after {
+/* header::after {
     content: "";
     height: 100%;
     width: 100%;
-    background: linear-gradient(to right, rgb(0, 0, 63) -15%, #000000 100%);
+    background: linear-gradient(to right, rgba(0, 0, 63, .4) -15%, #000000 100%);
     opacity: .7;
     left: 0;
     top: 0;
     position: absolute;
     z-index: 1;
-}
+} */
 
 header .nva-bar {
     display: flex;
@@ -69,10 +70,11 @@ header .nva-bar {
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     font-family: cursive;
 } */
-.logo img{
-   
+.logo img {
+
     width: 10rem;
 }
+
 .nav .nav-links {
     margin: 0 .3rem;
     padding: .4rem 1rem;
@@ -185,6 +187,7 @@ header .nva-bar {
     width: 100%;
     padding: 2rem 0;
     position: relative;
+    background-attachment: fixed;
 
 }
 
@@ -692,7 +695,7 @@ header .nva-bar {
 /*************************** portfolio area srt ***************************************/
 .portfolio {
     background: linear-gradient(rgba(52, 44, 73, .9), rgba(52, 44, 73, .9)),
-        url("../assets/portfolio-bg.jpg");
+        url("../assets/background-book-bookcase-books.jpg");
     transition: all .5s;
     padding: 4rem 0;
 
@@ -847,7 +850,7 @@ header .nva-bar {
 
 
 #contact {
-    background: linear-gradient(#1b2191bd, #0c104cbd), url("../assets/bg_contact.jpg");
+    background: linear-gradient(#1b2191bd, #0c104cbd), url("../assets/seo-slide.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1194,7 +1197,7 @@ header .nva-bar {
     overflow: hidden;
     background-color: whitesmoke;
     transition: all .5s linear;
-     display: none; 
+    display: none;
 
 }
 
@@ -1293,21 +1296,23 @@ header .nva-bar {
 .app-btn i {
     color: white;
     font-size: 2rem;
-    animation: whatsapp 1.5s linear  infinite;
+    animation: whatsapp 1.5s linear infinite;
     border-radius: 50%;
-   
+
 
 }
+
 @keyframes whatsapp {
-    50%{
+    50% {
         transform: scale(.9);
-        
+
     }
-    100%{
+
+    100% {
         transform: scale(1.2);
-        box-shadow: 4px 3px  20px rgba(0, 0, 0, .7);
-      
-        
+        box-shadow: 4px 3px 20px rgba(0, 0, 0, .7);
+
+
     }
 }
 
