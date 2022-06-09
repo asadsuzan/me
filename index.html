@@ -508,51 +508,37 @@
                     project..</p>
             </div>
             <!-- area title end -->
-            <div class="form-area mt-5" onsubmit="gotowhatsapp()">
+            <div class="form-area mt-5">
                 <div role="form" class="wpcf7" id="wpcf7-f7-o1" lang="en-US" dir="ltr">
                     <div class="screen-reader-response">
                         <p role="status" aria-live="polite" aria-atomic="true"></p>
                         <ul></ul>
                     </div>
-                    <form class="wpcf7-form init">
-                        <div style="display: none;">
-                            <input type="hidden" name="_wpcf7" value="7">
-                            <input type="hidden" name="_wpcf7_version" value="5.5.2">
-                            <input type="hidden" name="_wpcf7_locale" value="en_US">
-                            <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f7-o1">
-                            <input type="hidden" name="_wpcf7_container_post" value="0">
-                            <input type="hidden" name="_wpcf7_posted_data_hash" value="">
-                        </div>
+                    <form action="https://formspree.io/f/meqndgno" method="POST" class="wpcf7-form init">
+
                         <div class="name-area">
                             <span class="wpcf7-form-control-wrap first-name"><input type="text" name="fname" id="fname"
-                                    required value="" size="40"
-                                    class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control form-input name cst-c7-from"
+                                    required size="40" class=" form-control form-input name cst-c7-from"
                                     placeholder="First Name*"></span><br>
-                            <span class="wpcf7-form-control-wrap last-name"><input type="text" name="lname" value=""
-                                    required id="lname" size="40"
-                                    class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control form-input name cst-c7-from"
+                            <span class="wpcf7-form-control-wrap last-name"><input type="text" name="lname" required
+                                    id="lname" size="40" class=" form-control form-input name cst-c7-from"
                                     placeholder="Last Name*"></span>
                         </div>
                         <div class="email-area subject">
-                            <span class="wpcf7-form-control-wrap your-email"><input type="email" name="email" value=""
-                                    required size="40"
-                                    class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control form-input cst-c7-from"
-                                    id="email" placeholder="Email*"></span><br>
-                            <span class="wpcf7-form-control-wrap subject"><input type="text" name="subject" value=""
-                                    required size="40"
-                                    class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control form-input cst-c7-from"
-                                    id="subject" placeholder="Subject*"></span>
+                            <span class="wpcf7-form-control-wrap your-email"><input type="email" name="email" required
+                                    size="40" class="form-control form-input cst-c7-from" id="email"
+                                    placeholder="Email*"></span><br>
+                            <span class="wpcf7-form-control-wrap subject"><input type="text" name="subject" required
+                                    size="40" class="form-control form-input cst-c7-from" id="subject"
+                                    placeholder="Subject*"></span>
                         </div>
                         <div class="msg-btn-area">
-                            <span class="wpcf7-form-control-wrap your-message"><textarea name="message" cols="40"
-                                    rows="10"
-                                    class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required form-control form-input cst-c7-from"
-                                    id="message" placeholder="Your Message*"></textarea></span><br>
-                            <input type="submit" value="Send Message" name="submit"
-                                class="wpcf7-form-control has-spinner wpcf7-submit btn cst-btn"><span
-                                class="wpcf7-spinner"></span>
+                            <textarea name="message" cols="40" rows="10" required
+                                class=" form-control form-input cst-c7-from" id="message"
+                                placeholder="Your Message*"></textarea></span><br>
+                            <input type="submit" value="Send Message" name="submit" class="btn cst-btn">
                         </div>
-                        <div class="wpcf7-response-output"></div>
+
                     </form>
                 </div>
             </div>
