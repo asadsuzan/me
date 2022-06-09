@@ -478,12 +478,12 @@ header .nva-bar {
 }
 
 .skills .js::after {
-  content: "50%";
+  content: "80%";
   position: absolute;
   left: 0;
   top: 0;
   height: 100%;
-  width: 50%;
+  width: 80%;
   background-color: orchid;
   border-radius: 10px;
   font-weight: 900;
@@ -493,7 +493,7 @@ header .nva-bar {
 }
 
 /* js */
-.skills .jq {
+.skills .react {
   border-radius: 10px;
   height: 11px;
   width: 90%;
@@ -502,31 +502,7 @@ header .nva-bar {
   position: relative;
 }
 
-.skills .jq::after {
-  content: "60%";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 60%;
-  background-color: #156bad;
-  border-radius: 10px;
-  font-weight: 900;
-  text-align: right;
-  font-size: 9px;
-  animation: jq 3s ease-in-out 3;
-}
-
-.skills .wd {
-  border-radius: 10px;
-  height: 11px;
-  width: 90%;
-  margin: 0 auto;
-  background-color: gray;
-  position: relative;
-}
-
-.skills .wd::after {
+.skills .react::after {
   content: "70%";
   position: absolute;
   left: 0;
@@ -538,10 +514,10 @@ header .nva-bar {
   font-weight: 900;
   text-align: right;
   font-size: 9px;
-  animation: wd 3s ease-in-out 3;
+  animation: jq 3s ease-in-out 3;
 }
 
-.skills .el {
+.skills .node {
   border-radius: 10px;
   height: 11px;
   width: 90%;
@@ -550,13 +526,37 @@ header .nva-bar {
   position: relative;
 }
 
-.skills .el::after {
-  content: "90%";
+.skills .node::after {
+  content: "40%";
   position: absolute;
   left: 0;
   top: 0;
   height: 100%;
+  width: 40%;
+  background-color: #156bad;
+  border-radius: 10px;
+  font-weight: 900;
+  text-align: right;
+  font-size: 9px;
+  animation: wd 3s ease-in-out 3;
+}
+
+.skills .mongo {
+  border-radius: 10px;
+  height: 11px;
   width: 90%;
+  margin: 0 auto;
+  background-color: gray;
+  position: relative;
+}
+
+.skills .mongo::after {
+  content: "40%";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 40%;
   background-color: #d1285f;
   border-radius: 10px;
   font-weight: 900;
