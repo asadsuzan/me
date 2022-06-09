@@ -661,6 +661,7 @@ header .nva-bar {
   padding: 1.5rem;
   cursor: not-allowed;
   border-radius: 10px;
+  min-height: 400px;
 }
 
 .service-body:hover .servicse-icon {
@@ -970,7 +971,6 @@ header .nva-bar {
   color: #cecece;
   transition: 0.3s;
   position: relative;
-  cursor: not-allowed;
 }
 
 #footer .menu-link li a,
